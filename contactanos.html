@@ -1,12 +1,13 @@
-<!DOCTYPE html>
-<html lang="es-ar">
+
+<html lang="es-ar" xmlns="http://www.w3.org/1999/xhtml">
+
 
 <head>
     <title>Contactanos</title>
     <link href="css/estilosContactanos.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/2fde48c0e4.js" crossorigin="anonymous"></script>
     <script src="js/ValidacionForm.js"></script>
-    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 </head>
@@ -55,7 +56,7 @@
             <br />
             <input class="radioBtn" type="radio" id="radiotc" value="Uncheck" onclick="seleccionarTarjeta()" />
             <i class="far fa-credit-card"></i>
-            <label class="radioDesc">Pago con Tarjeta</label> 
+            <label class="radioDesc">Pago con Tarjeta</label>
             <br />
             <input class="radioBtn" type="radio" id="radioefe" value="Uncheck" onclick="seleccionarEfectivo()" />
             <i class="fas fa-money-bill-wave"></i>
@@ -66,7 +67,7 @@
 
             <button id="Enviar" onclick="PresionarEnviar()">Enviar</button>
 
-
+            <p id="res"></p>
 
         </form>
 

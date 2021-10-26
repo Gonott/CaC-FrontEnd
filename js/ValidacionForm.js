@@ -1,7 +1,9 @@
+var resultado = true;
+
 
 function ValidarForm() {
     
-    resultado = false;
+   
 
   
     if (document.getElementById("nombre").value == "") {
@@ -51,16 +53,24 @@ function ValidarForm() {
         alert("Debe seleccionar un método de pago");
     }
 
-    return resultado;
+    
 
 }
 
 function PresionarEnviar() {
 
-    
-    if (ValidarForm() == true) {
-        alert("ENVIADO");
+
+    try {
+        ValidarForm();
+
+    } catch (e) {
+        alert(e.value);
     }
+    
+    if (resultado == true) {
+        document.getElementById("res").innerHTML = "Listo, hemos registrado tu pedido, nos pondremos en contacto.";
+    }
+    else;
 
 }
 
