@@ -29,15 +29,15 @@
             break;
         case 6:
             nombre = "Triple CheeseCake, un postre cremoso e irresistible";
-            desc = "Torta con relleno de quesEl cheesecake, conocido tambi�n como pastel de queso, es un postre cl�sico de la cocina americana. Popular en todo el mundo, su principal ingrediente es el queso crema. Su fondo es crujiente y se obtiene al moler o triturar galletas y mezclarlas con mantequilla y azucar.";
+            desc = "Torta con relleno de quesEl cheesecake, conocido tambien como pastel de queso, es un postre clasico de la cocina americana. Popular en todo el mundo, su principal ingrediente es el queso crema. Su fondo es crujiente y se obtiene al moler o triturar galletas y mezclarlas con mantequilla y azucar.";
             break;
         case 7:
             nombre = "Torta Rogel";
             desc = "La torta rogel es un postre tradicional argentina que tiene capas de masa casera bien crujientes, rellenas de dulce de leche. Toda la torta cubierta con merengue.";
             break;
         case 8:
-            nombre = "Cremoso, suave e intenso. Tiramis�";
-            desc = "El tiramisu es un postre italiano muy popular a nivel internacional hecho a partir de un ingrediente solido y seco humedecido en cafe. Sin embargo, su nacimiento esta plagado de historias, leyendas y disputas que llegan hasta nuestros d�as, sin duda te va a encantar.";
+            nombre = "Cremoso, suave e intenso. Tiramisu";
+            desc = "El tiramisu es un postre italiano muy popular a nivel internacional hecho a partir de un ingrediente solido y seco humedecido en cafe. Sin embargo, su nacimiento esta plagado de historias, leyendas y disputas que llegan hasta nuestros dias, sin duda te va a encantar.";
             break;
         case 9:
             nombre = "Torta de Frutillas y Crema";
