@@ -1,10 +1,10 @@
-var resultado = true;
+
 
 
 function ValidarForm() {
     
    
-
+    var resultado = true;
   
     if (document.getElementById("nombre").value == "") {
         resultado = false;
@@ -15,8 +15,8 @@ function ValidarForm() {
         if (exp.test(document.getElementById("telefono").value) ){
             resultado = true;
         }
-        else{
-                resultado = false;
+
+        if (resultado == false) {
                 alert("Escriba un telefono válido");
             }
         
@@ -35,8 +35,7 @@ function ValidarForm() {
         if (exp.test(document.getElementById("email").value)) {
             resultado = true;
         }
-        else {
-            resultado = false;
+        if (resultado == false) {
             alert( "Escriba un correo válido");
         }        
     }
@@ -53,24 +52,15 @@ function ValidarForm() {
         alert("Debe seleccionar un método de pago");
     }
 
-    
+    return resultado;
 
 }
 
 function PresionarEnviar() {
 
-
-    try {
-        ValidarForm();
-
-    } catch (e) {
-        alert(e.value);
+    if (ValidarForm() == true) {
+        alert("Listo, hemos registrado tu pedido, nos pondremos en contacto.");
     }
-    
-    if (resultado == true) {
-        document.getElementById("res").innerHTML = "Listo, hemos registrado tu pedido, nos pondremos en contacto.";
-    }
-    else;
 
 }
 
