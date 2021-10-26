@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+
+<head>
+    <title>Contactanos</title>
+    <link href="css/estilosContactanos.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/2fde48c0e4.js" crossorigin="anonymous"></script>
+    <script src="js/ValidacionForm.js"></script>
+    <meta charset="utf-8" />
+
+
+</head>
+<body>
+
+    <h1>Contacto:</h1>
+
+    <img id="tortafondo" src="img/rogel2.jpg" alt="Torta Rogel en preparaci�n" />
+
+    <div>
+
+        <form name="miForm" action="/" method="post">
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" />
+
+            <label for="telefono">Tel�fono:</label>
+            <input type="number" id="telefono" />
+
+            <label for="email">Correo Electr�nico</label>
+            <input type="text" id="email" />
+
+            <label for="direccion">Direcci�n</label>
+            <input type="text" id="direccion" />
+
+
+            <label for="fechaenvio">Fecha de envio: </label>
+            <input type="date" id="fechaenvio" value="" />
+
+            <label for="torta">Torta:</label>
+            <select name="selecTorta">
+                <option value="1" onselect="seleccionarTorta(1)">StrawBerryChocolate Shortcake</option>
+                <option value="2" onselect="seleccionarTorta(2)"> Deadpool</option>
+                <option value="3" onselect="seleccionarTorta(3)"> Red Velvet </option>
+                <option value="4" onselect="seleccionarTorta(4)"> Banana y Dulce de Leche </option>
+                <option value="5" onselect="seleccionarTorta(5)"> Lemon Pie </option>
+                <option value="6" onselect="seleccionarTorta(6)"> Triple CheeseCake </option>
+                <option value="7" onselect="seleccionarTorta(7)"> Rogel </option>
+                <option value="8" onselect="seleccionarTorta(8)"> Tiramis� </option>
+                <option value="9" onselect="seleccionarTorta(9)"> Frutilla y Crema </option>
+                <option value="10" onselect="seleccionarTorta(10)"> Personalizada</option>
+
+            </select>
+
+            <label for="pago">Forma de Pago:</label>
+            <br />
+            <input class="radioBtn" type="radio" id="radiotc" value="Uncheck" onclick="seleccionarTarjeta()" />
+            <i class="far fa-credit-card"></i>
+            <label class="radioDesc">Pago con Tarjeta</label> 
+            <br />
+            <input class="radioBtn" type="radio" id="radioefe" value="Uncheck" onclick="seleccionarEfectivo()" />
+            <i class="fas fa-money-bill-wave"></i>
+            <label class="radioDesc">Pago con Efectivo</label>
+
+            <label for="observaciones">Observaciones:</label>
+            <textarea name="observaciones">Por defecto, este elemento contiene este texto</textarea>
+
+            <button id="Enviar" onclick="PresionarEnviar()">Enviar</button>
+
+
+
+        </form>
+
+
+
+    </div>
+
+
+    <footer>
+        <p>Otto Gonzalez 2021 - Derechos Reservados.</p>
+    </footer>
+
+</body>
+</html>

@@ -2,76 +2,78 @@
 <head>
 
     <title>Pedí tu torta</title>
-    <link href="estiloscatalogo.css" rel="stylesheet" />
-    <script src="ComportamientoTortas.js"> </script>
+    <link href="css/estiloscatalogo.css" rel="stylesheet" />
+    <script src="js/ComportamientoTortas.js"> </script>
 
 </head>
 <body>
 
     <header>
         <h1>
-            Pochi Repostería
+            Pochi Repostería 
         </h1>
     </header>
 
     <div class="contenedor">
 
-        <div class="item torta1">
+        <div class="item torta1" onclick="CambiarAside(1)">
             <img src="img/chocolatesstrawberryshortcake.jpg" alt="Strawberry chocolate" />
             <p>Strawberry Chocolate Shortcake</p>
         </div>
 
-        <div class="item torta2">
+        <div class="item torta2" onclick="CambiarAside(2)">
             <img src="img/deadpool.jpg" alt="Deadpool cake" />
             <p>Torta Deadpool</p>
         </div>
 
-        <div class="item torta3">
+        <div class="item torta3" onclick="CambiarAside(3)">
 
             <img src="img/redvelvet.jpg" alt="Torta redvelvet" />
             <p>Torta RedVelvet</p>
         </div>
 
-        <div class="torta4 item">
+        <div class="torta4 item" onclick="CambiarAside(4)">
             <img  src="img/BananaDulceDeLechePie.JPG" alt="Pie de Banana y Dulce de Leche" />
             <p>Torta de Banana y Dulce de Leche</p>
         </div>
 
-        <div class="torta5 item">
+        <div class="torta5 item" onclick="CambiarAside(5)">
             <img  src="img/Lemon Pie.JPG" alt="Torta Lemon Pie" />
             <p>Torta Lemon Pie</p>
         </div>
 
-        <div class="torta6 item">
+        <div class="torta6 item" onclick="CambiarAside(6)">
             <img  src="img/triplecheesecake.jpg" alt="Torta triple cheesecake" />
             <p>Torta TripleCheeseCake</p>
         </div>
 
-        <div class="torta7 item">
+        <div class="torta7 item" onclick="CambiarAside(7)">
             <img src="img/rogel.jpg" alt="Torta Rogel" />
             <p>Torta Rogel</p>
         </div>
 
-        <div class="torta8 item">
+        <div class="torta8 item" onclick="CambiarAside(8)">
             <img class="imagentorta" src="img/tiramisu.jpg" alt="Imagen de Tiramisú" />
             <p>Tiramisú</p>
         </div>
 
 
-        <div class="torta9 item">
-            <img  src="img/frutilla y algo.jpg" alt="Torta de Frutilla y crema" onclick="probar()" />
+        <div class="torta9 item" onclick="CambiarAside(9)">
+            <img  src="img/frutilla y algo.jpg" alt="Torta de Frutilla y crema" />
             <p>Torta de Frutilla y crema.</p>
         </div>
 
         <aside>
 
-            <h2>Titulo</h2>
-            <p>Descripción de la torta</p>
-            <button>botón </button>
+            <h2 id="torta"></h2>
+            <p id="desc"></p>
+            <button hidden id="pedirBtn" onclick="location.href='contactanos.html'">Hacé tu pedido </button>
 
         </aside>
 
-
+        <footer>
+            <p>Otto González 2021- Derechos Reservados</p>
+        </footer>
 
     </div>
 
