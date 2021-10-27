@@ -57,3 +57,18 @@ label{
 p{
     grid-column: 2;
 }
+
+
+
+@media (min-width: 320px) and (max-width: 767px){
+
+    .contenedor{
+        margin: 0px 0px 0px 0px;
+        max-width: 100%;
+    }
+
+
+
+
+
+}

@@ -124,8 +124,16 @@ footer{
 
 
 @media (max-width: 1023px) and (min-width: 768px) {
-    * {
-        
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        grid-gap: 5px;
+        padding: 10%;
+    }
+
+    aside{
+        max-width: 50%;
     }
 }
 
@@ -146,7 +154,16 @@ footer{
         transform: scale(1.0);
     }
 
-    
+    aside{
+        position: fixed;
+        bottom: 0;
+        max-width: 100%;
+        background: rgba(0,0,0,1);  
+        font-size: large;
+    }
 
+    #pedirBtn{
+        max-width : 100%;   
+    }
    
 }

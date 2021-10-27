@@ -132,28 +132,44 @@ footer {
 
 }
 
-
-@media (max-width: 1023px) and (min-width: 768px){
-    *{
-        
-    }
-
-}
-
 @media (min-width: 1024px){
 
     *{
-        background-color: lightgrey;
+        
     }
 }
+
+@media (max-width: 1023px) and (min-width: 768px){
+
+    .ubicacion{
+        left: 0;
+    }
+
+    #nosotros{
+        top: 30%;
+    }
+
+    #historia{
+        top: 90%;
+    }
+
+    .ubicacion{
+        top: 150%;
+    }
+}
+
 
 
 @media (min-width: 320px) and (max-width: 767px){
 
 
-    *{
+    * {
         background-color: aliceblue;
-        
+
+    }
+
+    p{
+        font-size: medium;
     }
 
     iframe{
@@ -185,6 +201,9 @@ footer {
 
     }
 
+    article{
+        
+    }
 
     
 }

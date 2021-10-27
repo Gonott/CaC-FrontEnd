@@ -87,3 +87,32 @@ button{
 select option{
     background-color: black;
 }
+
+
+@media (max-width: 1023px) and (min-width: 768px){
+    div{
+        padding-left: 10%;
+        padding-right: 10%;
+        margin: 0px 0px 0px 0px;
+    }
+
+}
+
+
+
+@media (min-width: 320px) and (max-width: 767px){
+
+    div{
+        padding-left:5%;
+        padding-right:5%;
+        margin-left:0%;
+        margin-right:0%;
+        max-width: 90%;
+    }
+
+    label{
+        font-size: medium;
+    }
+
+
+}
